@@ -1,0 +1,18 @@
+<div *ngFor="let hotel of hotelData?.hotels">
+   <img src="{{hotel.thumbnails[0].url}}"/>
+   <div class="hotel-details">
+        <span class="glyphicon" [class.glyphicon-star]="hotel.rating >= '1'" [class.glyphicon-star-empty]="hotel.rating < '1'"></span>
+        <span class="glyphicon" [class.glyphicon-star]="hotel.rating >= '2'" [class.glyphicon-star-empty]="hotel.rating < '2'"></span>
+        <span class="glyphicon" [class.glyphicon-star]="hotel.rating >= '3'" [class.glyphicon-star-empty]="hotel.rating < '3'"></span>
+        <span class="glyphicon" [class.glyphicon-star]="hotel.rating >= '4'" [class.glyphicon-star-empty]="hotel.rating < '4'"></span>
+        <span class="glyphicon" [class.glyphicon-star]="hotel.rating >= '5'" [class.glyphicon-star-empty]="hotel.rating < '5'"></span>
+        <span class="hotel_name">{{hotel.name}} </span>
+        <span class="hotel_address">{{hotel.contact.address.line1}} {{hotel.contact.address.city.name}} </span>
+   </div> 
+
+
+   <div class="price-details">
+       {{hotel.fare.baseFare}} {{hotel.fare.currency}} 
+   </div>
+   
+</div>  

@@ -3,7 +3,9 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  sessionUrl : "https://public-be.oski.io/hotel/v1.0/search/init",
+  resultUrl : "https://public-be.oski.io/hotel/v1.0/search/results"
 };
 
 /*

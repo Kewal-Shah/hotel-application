@@ -1,0 +1,19 @@
+.search-location , .date-details {
+    margin : 10px;
+    padding: 10px;
+}
+
+.search-location >input {
+    width: 500px;
+}
+
+.check-in-details, .check-out-details, .guest-details {
+    float: left;
+    padding: 10px;
+}
+
+.guest-details >button {
+    margin-top: 23px;
+    background-color: orange;
+    color: white;
+}
